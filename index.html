@@ -78,7 +78,7 @@
 											The <i>first</i> lattice-based folding scheme
 											(<a href="https://eprint.iacr.org/2020/1618.pdf">[BCLMS20]</a>,
 											<a href="https://eprint.iacr.org/2021/370.pdf">[KST21]</a>)
-											that is post-quantum secure and naturally leads to efficient 
+											for NP statements that is post-quantum secure and naturally leads to efficient 
 											recursive <a href="https://en.wikipedia.org/wiki/Non-interactive_zero-knowledge_proof">SNARKs</a> 
 											and <a href="https://people.eecs.berkeley.edu/~alexch/docs/CT10.pdf">PCDs</a>. 
 											The estimated performance is competitive with the top 
@@ -103,12 +103,13 @@
 										<p>
 										<div>
 											<li> <strong><a href="https://eprint.iacr.org/2023/620.pdf">Protostar</a></strong>:
-											A generic and highly efficient (relation) folding scheme that supports any relations 
+											A generic and highly efficient folding scheme for any relations 
 											that can be proved via special-sound protocols.
 											It leads to an efficient <a href="https://iacr.org/archive/tcc2008/49480001/49480001.pdf">IVC</a> scheme for non-uniform computation that supports high-degree custom gates and table lookups.
-											(<a href="https://geometry.xyz/notebook/paper-speedrun-protostar">Blogpost</a> 
+											<div><a href="https://geometry.xyz/notebook/paper-speedrun-protostar">Blogpost</a> 
 											and <a href="https://github.com/geometryresearch/protostar">Implementations</a> 
-											from <a href="https://geometry.dev/about">Geometry Research</a>)
+											from <a href="https://geometry.dev/about">Geometry Research</a>.
+											</div>
 											<!-- Notably, the number of group scalar multiplications in the folding verifier is independent of the gate degree. -->
 										</div>
 										</p>
@@ -119,6 +120,7 @@
 											for multilinear polynomials over <i>any</i> (sufficiently) large fields.
 											This enables more flexible options for selecting fields for SNARK instantiations (e.g., STARKs, Hyperplonk, Plonk, etc).
 											As an application, it leads to a SNARK for proving ECDSA signature verification that is more than 20x faster than the state-of-the-art.
+											<div><a href="https://github.com/hadasz/plonkish_basefold">Proof-of-Concept Implementation</a>. </div>
 										</p>
 
 										<li> <strong><a href="https://eprint.iacr.org/2016/989.pdf">Optimal Memory-Hardness of Scrypt</a></strong>:
@@ -144,6 +146,12 @@
 	
 	<ol>
 	<li>
+		<span class="papertitle">LatticeFold: A Lattice-based Folding Scheme and its Applications to Succinct Proof Systems</span> 
+			(<a href="https://eprint.iacr.org/2024/257.pdf">link</a>)
+			<br><a href="https://crypto.stanford.edu/~dabo/">Dan Boneh</a>, 
+			<i>Binyi Chen</i><br>       
+			<strong>Preprint.</strong>
+	<li>
 		<span class="papertitle">Mangrove: A Scalable Framework for Folding-based SNARKs</span> 
 			(<a href="https://eprint.iacr.org/2024/416.pdf">link</a>)
 			<br><strong>*</strong> <a href="https://c.rypto.systems/">Wilson Nguyen</a>, 
@@ -152,20 +160,13 @@
 			<a href="https://homes.cs.washington.edu/~tyagi/">Nirvan Tyagi</a>, 
 			<a href="https://crypto.stanford.edu/~dabo/">Dan Boneh</a>
 			<br>       
-			<strong>Preprint.</strong>
-
-	<li>
-		<span class="papertitle">LatticeFold: A Lattice-based Folding Scheme and its Applications to Succinct Proof Systems</span> 
-			(<a href="https://eprint.iacr.org/2024/257.pdf">link</a>)
-			<br><a href="https://crypto.stanford.edu/~dabo/">Dan Boneh</a>, 
-			<i>Binyi Chen</i><br>       
-			<strong>Preprint.</strong>
+			<strong>CRYPTO 2024.</strong>
 
 	  <li>
 			<span class="papertitle">BaseFold: Efficient Field-Agnostic Polynomial Commitment Schemes from Foldable Codes</span> 
 			  (<a href="https://eprint.iacr.org/2023/1705.pdf">link</a>)
 			  <br><strong>*</strong> Hadas Zeilberger, <i>Binyi Chen</i>, <a href="https://sites.google.com/site/benafisch/">Ben Fisch</a><br>       
-			  <strong>Preprint.</strong>
+			  <strong>CRYPTO 2024.</strong>
 
 	<li>
 		<span class="papertitle">LatticeGen: A Cooperative Framework which Hides Generated Text in a Lattice for Privacy-Aware Generation on Cloud</span> 
