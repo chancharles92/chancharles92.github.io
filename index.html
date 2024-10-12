@@ -61,7 +61,7 @@
 									<a href="https://github.com/chancharles92">Github</a>
 								</div>
 								</p>
-									<strong>Research interests:</strong> Applied cryptography (e.g., zero knowledge and succinct proofs, post-quantum cryptography), Blockchain technology, and security.
+									<strong>Research interests:</strong> Applied cryptography (e.g., zero knowledge and succinct proofs, post-quantum cryptography), blockchain technology, and security.
 								</div>
 								</section>
 
@@ -115,15 +115,21 @@
 
 										<p>
 										<li> <strong><a href="https://eprint.iacr.org/2023/1705.pdf">BaseFold</a></strong>:
-											A <a href="https://cacr.uwaterloo.ca/techreports/2010/cacr2010-10.pdf">polynomial commitment scheme</a>
-											for multilinear polynomials over <i>any</i> (sufficiently) large fields.
-											This enables more flexible options for selecting fields for SNARK instantiations (e.g., STARKs, Hyperplonk, Plonk, etc).
-											As an application, it leads to a SNARK for proving ECDSA signature verification that is more than 20x faster than the state-of-the-art.
+											A multilinear <a href="https://cacr.uwaterloo.ca/techreports/2010/cacr2010-10.pdf">polynomial commitment scheme</a>
+											with polylogarithmic verifier and proof size, that can be instantiated over almost <i>any</i> fields.
+											This enables more flexible options for selecting fields for SNARK instantiations.
+											E.g., it leads to a SNARK for proving ECDSA signature verification that is more than 20x faster than the state-of-the-art.
 											<div><a href="https://github.com/hadasz/plonkish_basefold">Proof-of-Concept Implementation</a>;
 												<a href="https://blog.lambdaclass.com/how-does-basefold-polynomial-commitment-scheme-generalize-fri/">Blog post from LambdaClass</a>;
 												<a href="https://eprint.iacr.org/2024/504.pdf">A variant that supports binary fields</a>.
 											</div>
 										</p>
+
+										<p>
+											<li> <strong><a href="https://eprint.iacr.org/2024/1609.pdf">Blaze</a></strong>:
+												A multilinear polynomial commitment over binary fields with strictly <i>linear-time</i> prover and polylogarithmic verifier.
+												For large computation instances, Blaze's prover speed is similar to the fastest SNARK in the literature such as Brakedown, while achieving 10x smaller proof/verification.
+											</p>
 
 										<li> <strong><a href="https://eprint.iacr.org/2016/989.pdf">Optimal Memory-Hardness of Scrypt</a></strong>:
 											<a href="https://en.wikipedia.org/wiki/Scrypt">Scrypt</a> is a popular password hash function.
@@ -148,6 +154,23 @@
 	
 	<ol reversed>
 	<li>
+		<span class="papertitle">Blaze: Fast SNARKs from Interleaved RAA Codes</span> 
+			(<a href="https://eprint.iacr.org/2024/1609.pdf">link</a>)
+			<br><a href="https://ivi.fnwi.uva.nl/tcs/author/martijn-brehm/">Martijn Brehm</a>, 
+			<i>Binyi Chen</i>,
+			<a href="https://sites.google.com/site/benafisch/">Ben Fisch</a>,
+			<a href="https://nicolas-resch.carrd.co/">Nicolas Resch</a>,
+			<a href="https://csaws.cs.technion.ac.il/~rothblum/">Ron D. Rothblum</a>,
+			<a href="https://www.hadasze.me/">Hadas Zeilberger</a>
+			<br>  
+			<strong>In Submission.</strong>
+	<li>
+		<span class="papertitle">LatticeFold: A Lattice-based Folding Scheme and its Applications to Succinct Proof Systems</span> 
+			(<a href="https://eprint.iacr.org/2024/257.pdf">link</a>)
+			<br><a href="https://crypto.stanford.edu/~dabo/">Dan Boneh</a>, 
+			<i>Binyi Chen</i><br>   
+			<strong>In Submission.</strong>    
+	<li>
 		<span class="papertitle">VerITAS: Verifying Image Transformations at Scale</span> 
 			(<a href="https://eprint.iacr.org/2024/1066.pdf">link</a>)
 			<br><strong>*</strong>
@@ -155,14 +178,8 @@
 			<i>Binyi Chen</i>, 
 			<a href="https://crypto.stanford.edu/~dabo/">Dan Boneh</a> 
 			<br>       
-			<strong>IEEE S&P 2025.</strong>
+			<strong>S&P 2025.</strong>
 
-	<li>
-		<span class="papertitle">LatticeFold: A Lattice-based Folding Scheme and its Applications to Succinct Proof Systems</span> 
-			(<a href="https://eprint.iacr.org/2024/257.pdf">link</a>)
-			<br><a href="https://crypto.stanford.edu/~dabo/">Dan Boneh</a>, 
-			<i>Binyi Chen</i><br>       
-			<strong>SBC 2024.</strong>
 	<li>
 		<span class="papertitle">The Espresso Sequencing Network: HotShot Consensus, Tiramisu Data-Availability, and Builder-Exchange</span> 
 			(<a href="https://eprint.iacr.org/2024/1189.pdf">link</a>)
