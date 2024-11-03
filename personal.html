@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Create four equal columns that sits next to each other */
+	/* .column {
+	-ms-flex: 25%; 
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+	}
+
+	.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+	} */
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<!-- Header -->
+<div class="header">
+	<h1>Personal</h1>
+	<p>I enjoy hiking, camping, and traveling. Here are some of the places I’ve explored.</p>
+  </div>
+  
+  <!-- Photo Grid -->
+  <div class="row"> 
+	<div class="column">
+	  <img src="pics/volcanoes.JPG" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Volcanoes National Park, HI
+	  </div>
+	  <img src="pics/honolulu.JPG" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Honolulu, HI
+	  </div>
+	  <img src="pics/badwater.JPG" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Death Valley, CA
+	  </div>
+	  <img src="pics/deathvalley-mesquite.JPG" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Mesquite Flat Sand Dunes, CA
+	  </div>
+	  <img src="pics/washington.jpg" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Seattle, WA
+	  </div>
+	  <img src="pics/thousand-islands.JPG" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Thousand Island Lake, CA
+	  </div>
+	  <img src="pics/yosemite.JPG" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Yoemite Firefall, CA
+	  </div>
+	  <img src="pics/yosemite-2.JPG" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Yoemite, CA
+	  </div>
+	</div>
+
+	<div class="column">
+	  <img src="pics/arc-utah.JPG" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Arches National Park, UT
+	  </div>
+	  <img src="pics/brycecanyon.JPG" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Bryce Canyon National Park, UT
+	  </div>
+	  <img src="pics/capitolreef.jpg" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Capitol Reef National Park, UT
+	  </div>
+	  <img src="pics/mesa-arch-canyonland-utah.JPG" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Canyonlands National Park, UT
+	  </div>
+	  <img src="pics/monument.JPG" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Monument Valley, AZ
+	  </div>
+	  <img src="pics/sedona.JPG" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Sedona, AZ
+	  </div>
+	  <img src="pics/valley-of-fire-NV.JPG" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Valley of Fire, NV
+	  </div>
+	  <img src="pics/zion.JPG" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Zion National Park, UT
+	  </div>
+	</div>  
+	
+	<div class="column">
+	  <img src="pics/arcadia.jpg" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Acadia National Park, ME
+	  </div>
+	  <img src="pics/vermont.jpg" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Woodbury, VT
+	  </div>
+	  <img src="pics/chapel.JPG" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Fred W. Symmes Chapel, SC
+	  </div>
+	  <img src="pics/smoky.JPG" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Great Smoky Mountains, TN
+	  </div>
+	  <img src="pics/florida.jpg" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Dry Tortugas National Park, FL
+	  </div>
+	  <img src="pics/milkyway.JPG" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Milky Way, ME
+	  </div>
+	  <img src="pics/airplane.jpg" style="width:100%">
+	  <div style="text-align: center; font-family:'inter'; padding-top: 5px; padding-bottom: 5px;">
+		Airplane Home, OR
+	  </div>
+	</div>
+  </div>
+			
+	</body>
+</html>
