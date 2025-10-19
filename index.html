@@ -72,7 +72,18 @@
 										<header>
 											<h2>Research Highlights</h2>
 										</header>
+										<strong><h4>Folding (Accumulation) Schemes</h4></strong>
 										<ul>
+										
+										<p>
+										<div>
+											<li> <strong><a href="https://eprint.iacr.org/2025/1905.pdf">Symphony</a></strong>:
+											The <strong>first</strong> framework that turns a folding scheme into a scalable SNARK system in the random oracle model.
+											Along the way, we develop a new lattice-based folding scheme that supports folding thousands of instances at once 
+											with near optimal prover efficiency.
+										</div>
+										</p>
+
 										<p>
 										<div>
 											<li> <strong><a href="https://eprint.iacr.org/2024/257.pdf">LatticeFold</a></strong> / <strong><a href="https://eprint.iacr.org/2025/247.pdf">LatticeFold+</a></strong>:
@@ -86,20 +97,6 @@
 											pre-quantum folding schemes.
 											<div><strong>Implementation</strong>: 
 												<a href="https://github.com/NethermindEth/latticefold">Nethermind</a>.
-											</div>
-										</div>
-										</p>
-										
-										<p>
-										<div>
-											<li> <strong><a href="https://eprint.iacr.org/2022/1355.pdf">HyperPlonk</a></strong>: 
-											A SNARK that is specifically designed for proving large complex statements. 
-											It removes the requirment for FFTs which makes HyperPlonk more scalable and parallelizable. 
-											It also enables high-degree custom gates for complex circuits, such as ZKEVMs.
-											<div><strong>Implementations</strong>: 
-												<a href="https://github.com/EspressoSystems/hyperplonk">EspressoSys</a>;
-												<a href="https://github.com/han0110/plonkish/tree/main/plonkish_backend/src/backend">Ethereum Foundation</a>;
-												and an <a href="https://gitlab.com/UlvetannaOSS/binius">adapted version</a> from Ulvetanna based on <a href="https://eprint.iacr.org/2023/1784.pdf">Binius</a>.
 											</div>
 										</div>
 										</p>
@@ -117,13 +114,16 @@
 											<!-- Notably, the number of group scalar multiplications in the folding verifier is independent of the gate degree. -->
 										</div>
 										</p>
+										</ul>
 
+										<strong><h4>Hash-based SNARKs</h4></strong>
+										<ul>
 										<p>
 										<li> <strong><a href="https://eprint.iacr.org/2023/1705.pdf">BaseFold</a></strong>:
 											A multilinear <a href="https://cacr.uwaterloo.ca/techreports/2010/cacr2010-10.pdf">polynomial commitment scheme</a>
 											with polylogarithmic verifier and proof size, that can be instantiated over almost <i>any</i> fields.
 											This enables more flexible options for selecting fields for SNARK instantiations.
-											E.g., it leads to a SNARK for proving ECDSA signature verification that is more than 20x faster than the state-of-the-art.
+											<!-- E.g., it leads to a SNARK for proving ECDSA signature verification that is more than 20x faster than the state-of-the-art. -->
 											<div><a href="https://github.com/hadasz/plonkish_basefold">Proof-of-Concept Implementation</a>;
 												<a href="https://blog.lambdaclass.com/how-does-basefold-polynomial-commitment-scheme-generalize-fri/">Blog post from LambdaClass</a>;
 												<a href="https://eprint.iacr.org/2024/504.pdf">A variant that supports binary fields</a>.
@@ -134,16 +134,32 @@
 											<li> <strong><a href="https://eprint.iacr.org/2024/1609.pdf">Blaze</a></strong>:
 												A multilinear polynomial commitment over binary fields with strictly <i>linear-time</i> prover and polylogarithmic verifier.
 												For large computation instances, Blaze's prover speed is similar to the fastest SNARK in the literature such as Brakedown, while achieving 10x smaller proof/verification.
-											</p>
+										</p>
 
-										<li> <strong><a href="https://eprint.iacr.org/2016/989.pdf">Optimal Memory-Hardness of Scrypt</a></strong>:
+										<p>
+											<li> <strong><a href="https://eprint.iacr.org/2022/1355.pdf">HyperPlonk</a></strong>: 
+											A proof system specifically designed for proving large complex statements (e.g. ZKEVMs)
+											<!-- It removes the requirment for FFTs which makes HyperPlonk more scalable and parallelizable.  -->
+											by enabling high-degree custom gates.
+											<div><strong>Implementations</strong>: 
+												<a href="https://github.com/EspressoSystems/hyperplonk">EspressoSys</a>;
+												<a href="https://github.com/han0110/plonkish/tree/main/plonkish_backend/src/backend">Ethereum Foundation</a>;
+												and an <a href="https://gitlab.com/UlvetannaOSS/binius">adapted version</a> from Ulvetanna based on <a href="https://eprint.iacr.org/2023/1784.pdf">Binius</a>.
+											</div>
+										</p>
+										</ul>
+
+									<strong><h4>Memory-Hard Functions</h4></strong>
+									<ul>
+									<p>
+									<li> <strong><a href="https://eprint.iacr.org/2016/989.pdf">Optimal Memory-Hardness of Scrypt</a></strong>:
 											<a href="https://en.wikipedia.org/wiki/Scrypt">Scrypt</a> is a popular password hash function.
 											We formally prove that it is <i>optimally memory hard</i>. Informally speaking, 
 											the attacker cannot break the password hashing scheme even 
 											if it is equipped with highly parallelized and optimized hardwares (e.g. ASICs).
 											The result won the <strong>Best Paper Award</strong> at EUROCRYPT 2017.
-										
-										</ul>
+									</p>
+									</ul>
 								</div></section>
 									
 								
@@ -158,6 +174,14 @@
 	</div>
 	
 	<ol reversed>
+
+	<li>
+		<span class="papertitle">Symphony: Scalable SNARKs in the Random Oracle Model from Lattice-Based High-Arity Folding</span> 
+			(<a href="https://eprint.iacr.org/2025/1905.pdf">link</a>)
+			<br>
+			<i>Binyi Chen</i>
+			<br>    
+			<strong>In submission.</strong>
 
 	<li>
 		<span class="papertitle">Pairing-Based Batch Arguments for NP with a Linear-Size CRS</span> 
@@ -435,11 +459,11 @@
 				<h2>Teaching</h2>
 			</header>
 			<strong><h4>Stanford University</h4></strong>
-			<!-- <ul> -->
+			<ul>
 				<li>
 					Co-designer and instructor: CS 355: Applied Zero Knowledge Proofs (<a href="https://cs355.stanford.edu/">Website</a>)
 				</li>
-			<!-- </ul> -->
+			</ul>
 		</div>
 	</section>	
 
@@ -448,8 +472,8 @@
 			<header>
 				<h2>Service</h2>
 			</header>
-			<strong>Program Committee:</strong>
-			<!-- <ul> -->
+			<strong><h4>Program Committee:</h4></strong>
+			<ul>
 				<li>
 					<strong>EUROCRYPT 2025, 2026</strong>
 				</li>
@@ -486,7 +510,7 @@
 				<li>
 					<strong>The Science of Blockchain Conference (SBC)</strong> 2024
 				</li>
-			<!-- </ul> -->
+			</ul>
 		</div>
 	</section>		
 	
